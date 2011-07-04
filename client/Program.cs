@@ -18,6 +18,11 @@ namespace client
             Console.WriteLine();
             Console.WriteLine(response.RawText);
             Console.WriteLine();
+
+            var encoding = "application/x-www-form-urlencoded";
+            var data = new Dictionary<string, object>();
+            client.Post("http://localhost:5656/nuget", data, encoding);
+
         }
     }
 }
