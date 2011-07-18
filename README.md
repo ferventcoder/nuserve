@@ -27,3 +27,29 @@ You should now be set up to build the project from the command line (via "rake")
 Drop me a line if you run into trouble.
 
 David.
+
+# build dependencies
+
+1. Download & install Ruby 1.8.7 +
+
+## Install the Ruby DevKit
+
+You may need to install the Ruby DevKit 
+
+1. Download the [DevKit](http://github.com/downloads/oneclick/rubyinstaller/DevKit-tdm-32-4.5.2-20110712-1620-sfx.exe) from http://rubyinstaller.org/
+1. Unzip it and open a command window into that folder with ruby in the path
+1. run "ruby dk.rb init"
+1. run "ruby dk.rb install"
+
+## Setup ANSCICON to enable colored Cucumber output
+
+1. Go to http://adoxa.110mb.com/ansicon/
+1. Download [ANSICON v1.40](http://adoxa.110mb.com/ansicon/dl.php?f=ansicon)
+1. Unzip it to somewhere permanent and open a command window to that folder
+1. Change to the x86 or x64 folder and run "ansicon.exe -i" to install ansicon
+
+## Build and go!
+
+1. open a command window into the project folder
+1. run "setup.bat" to install rake and bundler
+1. run "rake" to build, test, and package into ~/build/
